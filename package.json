@@ -4,7 +4,16 @@
     "description": "socket.io(client) plugin for vue",
     "main": "dist/build.js",
     "scripts": {
-        "build": "webpack --progress --hide-modules"
+        "build": "webpack --progress --hide-modules",
+        "test": "mocha"
+    },
+    "xo": {
+        "esnext": true,
+        "space": false,
+        "semicolon": false,
+        "ignores": [
+            "dist/**"
+        ]
     },
     "repository": {
         "type": "git",
@@ -28,6 +37,8 @@
         "babel-cli": "^6.11.4",
         "babel-loader": "^6.2.5",
         "babel-preset-es2015": "^6.3.13",
-        "webpack": "^2.2.0-rc.3"
+        "mocha": "^3.2.0",
+        "webpack": "^2.2.0-rc.3",
+        "xo": "^0.17.1"
     }
 }
