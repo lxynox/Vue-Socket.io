@@ -2,10 +2,12 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-    entry: ['./index.js'],
+  entry: ['./lib/index.js'],
     output: {
         path: path.resolve(__dirname, './dist'),
-        filename: 'build.js'
+        filename: 'index.js',
+				library: 'vue-socket-io',
+				libraryTarget: 'umd'
     },
     devtool: "source-map",
     plugins: [
